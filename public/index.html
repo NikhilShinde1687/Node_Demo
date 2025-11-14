@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Node.js Website – Windows</title>
+</head>
+<body>
+    <h1>Welcome to My Node.js Website (Windows Version)</h1>
+    <p>This page is served from Express on Windows.</p>
+
+    <button onclick="callAPI()">Click to call Windows backend</button>
+
+    <p id="response"></p>
+
+    <script>
+        function callAPI() {
+            fetch("/api/hello")
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("response").innerText = data.message;
+                });
+        }
+    </script>
+</body>
+</html>

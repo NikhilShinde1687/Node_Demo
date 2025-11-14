@@ -1,0 +1,13 @@
+{
+  "name": "simple-node-website-windows",
+  "version": "1.0.0",
+  "description": "A simple Node.js website for demo run (Windows)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
